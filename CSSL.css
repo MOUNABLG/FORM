@@ -7,9 +7,43 @@ body{
 
 fieldset{
     text-decoration-color: aliceblue;
-    background-color: rgb(247, 246, 205);
+    background-color:rgb(255, 240, 242)
 }
 legend
 {
-    color: rgb(175, 150, 241);
+    color: rgb(245, 128, 128);
+}
+h2{
+    color: darkcyan;
+    text-decoration: underline;
+}
+#err{
+    color: brown;
+}
+#errr{
+    color: brown;
+}
+#errrr{
+    color: brown;
+}
+#G{
+    color: brown;
+}
+#PC{
+    color: brown;
+}
+#E{
+    color: brown;
+}
+#L{
+    color: brown;
+}
+#Pw{
+    color: brown;
+}
+#VF{
+    color: brown;
+}
+#Y{
+    color: brown;
 }

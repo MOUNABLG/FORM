@@ -2,65 +2,92 @@
 <html>
     <head>
      <link rel="stylesheet"  href="CSSL.css">
-    
+     <script  defer src="JAVA.js"></script> 
+     
     </head>
     <body>
-
+    <form>
         <fieldset>
-            <legend><b>INSCRIPTION</b></legend>
+            <legend><h1><b>INSCRIPTION</b></h1></legend>
+
           <form action="/my-handling-form-page" method="post"></form>
-   
+          <h2>BONJOUR Mme/Mr. </h2>
+          <h3><b> la date </b>:<time datetime="12-08-2022"></h3>
+            <p id="d"></p>
+        
         <table>
             <tr>
                 <td><b>Nom :</b><span style="color:crimson">* </span></td>
-                <td><input type="text" id="Nom" name="Nom"><br></td>
+                <td><input type="text" id="Nom" name="Nm"><br></td>
+                <td id="err"></td>
+           </tr>
+                
+           
+            <tr>
+                <td><b>Date de naissance :</b><span style="color: crimson;">*</span></td>
+                <td><input type="date" id="DATEN"></td>
+                <td id="E"></td>
             </tr>
             <tr>
                 <td><b>Prenom :</b><span style="color:crimson">*</span></td>
-                <td><input type="text" id="Prenom" name="Prenom"><br></td>
+                <td><input type="text" id="Prenom" name="Prn"><br></td>
+                <td id="errr"></td>
             </tr>
             <tr>
                 <td><b>Code Postale:</b><span style="color:crimson">*</span></td>
-                <td><input type="text" id="CPostale" name="CPostale"><br></td>
+                <td><input type="text" id="CPostale" name="CP"><br></td>
+                <td id="errrr"></td>
+            </tr>
+            <tr>
+                <td> <b> Tel. :<span style="color:crimson">*</span></b></td>
+                <td> <input type="tel" id="TL" name="tele" ><br></td>
+                <td id=" Num"> </td>
             </tr>
             <tr>
                 <td><b>Pays :</b><span style="color:crimson">*</span></td>
                 <td><select name ="pays" id ="pays">
                     <option value =""> Please select</option>
                     <option value="MOROCCO">MOROCCO</option>
-                    <option value="SPAIN">SPAIN</options>
+                    <option value="SPAIN">SPAIN</option>
                     <option  value="OTHER">OTHER</option>
                 </td>
+                <td id="Y"></td>
             </tr>
             <tr>
                 <td><b>Genre:</b><span style="color :crimson">*</span></td>
-                <td><input type="radio" id="Genre" name="Genre">Masculin<input type="radio" id="Genre" name="Genre">Feminin<br></td>
+                <td><input type="radio" id="MA" name="Genre">Masculin<input type="radio" id="FE" name="Genre">Feminin<br></td>
+            <td id="G"></td>
             </tr>
            <tr>
                 <td><b>Preference de contact :</b><span style="color:crimson">*</span></td>
-                <td><input type="checkbox" id="Pcont" name="Pcont">FAX<input type="checkbox" id="Pcont" name="Pcont">Tel<input type="checkbox" id="Pcont" name="Pcont">Email<br></td>
-           </tr>
+                <td><input type="checkbox" id="FX" name="Pcont">FAX<input type="checkbox" id="TL" name="Pcont">Tel<input type="checkbox" id="ML" name="Pcont">Email<br></td>
+                <td id = PC></td>
+            </tr>
             <tr>
                 <td><b>Email :</b><span style="color:crimson">*</span></td>
-                <td><input type="text" id="Email" name="Email"><br></td>
+                <td><input type="email" id="email" name="EL"><br></td>
+                <td id="L"></td>
            </tr>
            <tr>
             <td><b>Password (6-8 caracters):</b><span style="color:crimson">*</span></td>
-            <td><input type="text" id="PW name" name="PW"><br></td>
+            <td><input type="password" id="PaW" name="PD"><br></td>
+            <td id="Pw"></td>
            </tr>
            <tr>
             <td><b>Vertification password :</b><span style="color:crimson">*</span> </td>
-            <td><input type="text" id="Prenom" name="Prenom"><br></td>
+            <td><input type="password" id="Vrf" name="VER"><br></td>
+            <td id="VF"></td>
            </tr>
            <tr>
             <td> </td> 
-            <td> <input  type="submit" value="envoyer"></input><input type ="submit" value="effacer"></input></td>
-        </tr>
+            <td> <input  type="button" value="envoyer" onclick="subm();"></input> <input type ="submit" value="effacer"></input></td>   
+          </tr>
 
         </table>
-            
-        
+     
+        <p id="pff">Put year :</p>
+       
         </fieldset>
-  
+    </form>
     </body>
     </html>
